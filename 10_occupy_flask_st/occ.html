@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <title>                                                                                      
+Fortune teller
+  </title>
+  <head>
+    <font size = "15">Fortune teller</font><br>
+    The purpose of this website is to indicate to you in which job class you should be looking\
+ for a job. This is based on the popularity of jobs in the United States, as you can see in th\
+e table below.
+    <br><br>
+    <b>Your future job will be in the field of: </b> {{job}}
+    <br>
+    <br>
+  </head>
+  <body>
+    <br>
+    <table border = "1">
+      <tr>
+        <td><b>Job class </td>
+        <td><b>Percentage</td>
+      </tr>
+
+    {% for i in dict %}
+    <tr> <td>{{i}}</td>
+      <td>{{dict[i]}}</td>
+      </tr>
+    {% endfor %}
+    </table>
+  </body>
+</html>
