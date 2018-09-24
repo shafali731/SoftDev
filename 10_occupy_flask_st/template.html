@@ -1,18 +1,26 @@
+<!-- Team Pancakes - Shafali Gupta and Clara Mohri
+SoftDev pd07
+K10 - Jinja Tuning
+2018-09-24 -->
+
 <!DOCTYPE html>
 <html>
-  <title>                                                                                      
+  <title>
 Fortune teller
   </title>
+
   <head>
     <font size = "15">Fortune teller</font><br>
     The purpose of this website is to indicate to you in which job class you should be looking\
  for a job. This is based on the popularity of jobs in the United States, as you can see in th\
 e table below.
     <br><br>
+
     <b>Your future job will be in the field of: </b> {{job}}
     <br>
     <br>
   </head>
+
   <body>
     <br>
     <table border = "1">
@@ -21,11 +29,12 @@ e table below.
         <td><b>Percentage</td>
       </tr>
 
-    {% for i in dict %}
-    <tr> <td>{{i}}</td>
-      <td>{{dict[i]}}</td>
+    {% for i in diction %}
+    <tr> <td>{{i}}</td> <!-- keys/occupations -->
+      <td>{{diction[i]}}</td> <!-- Percentage -->
       </tr>
     {% endfor %}
+
     </table>
   </body>
 </html>

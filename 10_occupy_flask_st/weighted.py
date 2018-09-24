@@ -1,3 +1,8 @@
+#Team Pancakes - Shafali Gupta and Clara Mohri
+#SoftDev pd07
+#K10 - Jinja Tuning
+#2018-09-24
+
 from flask import Flask, render_template
 
 from random import random
@@ -73,15 +78,14 @@ def read_lines(file):
         return f.readlines()
 
 @app.route('/occupations')
-def home():    
+def home():
     #return main()
     #return read_file('data/occupations.csv')
 
-        
+
     return render_template('template.html',
                            job = main(),
-                           dict = csv_to_weighted_list(read_file('data/occupations.csv')))
-    
+                           diction = csv_to_weighted_list(read_file('data/occupations.csv')))
+
 app.debug = True
 app.run()
-OB
