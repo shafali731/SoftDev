@@ -9,17 +9,17 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
-@app.route('/auth')
+@app.route('/auth', methods = ['POST'])
 def auth():
-    print(app)
-    print(request)
-    print(request.args)
-    print(request.args['username'])
-    print(request.headers)
-    user = request.args['username']
-    method = request.method
-    return render_template('auth.html', name= user, m = method)
-
+    if request.method == "POST":
+        return render_template("auth.html", name = "BRRRUHHHH", method = request.method)
+   # print(app)
+   # print(request)
+   # print(request.args)
+   # print(request.args['username'])
+   # print(request.headers)
+    else:
+        return render_template('auth.html', name= request.args['username'], method = request.method)
 
 if __name__ == "__main__":
     app.debug = True
