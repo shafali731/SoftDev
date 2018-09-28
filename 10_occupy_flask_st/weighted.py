@@ -4,7 +4,7 @@
 #2018-09-24
 
 from flask import Flask, render_template
-
+from util import 
 from random import random
 
 app = Flask(__name__)
