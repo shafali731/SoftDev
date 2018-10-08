@@ -1,4 +1,4 @@
-#Clara Mohri
+#Team Pancakes- Clara Mohri, Shafali Gupta
 #SoftDev1 pd08
 #K17 -- Average
 #2018-10-07
