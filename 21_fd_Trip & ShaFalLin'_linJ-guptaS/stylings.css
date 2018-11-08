@@ -1,5 +1,15 @@
 .div1{
   border: solid #EEEEEE 1px;
+  margin: 10px;
+}
+
+.div2{
+  border: solid #000000 2px;
+  padding: 10px
+}
+
+.div3{
+  border: solid #000000 1px;
 }
 
 body{
@@ -14,5 +24,6 @@ h1,h3{
   text-align: center;
 }
 
-$mediaobject-margin-bottom:
-  800px;
+.vertical{
+  height: 300px;
+}
