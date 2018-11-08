@@ -1,0 +1,79 @@
+<!--
+Trip & ShaFalLin' -- Jason Lin and Shafali Gupta
+SoftDev1 pd7
+K21 -- Who Does Frame Work For?
+2018-11-7
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Foundation Guide</title>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/css/foundation.css">
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/vendor/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylings.css">
+  </head>
+  <body>
+    <h1>Demonstration of Using Foundation</h1>
+    <div class="grid-x grid-padding-x grid-margin-x ">
+      <div class="div1 cell small-12 medium-6 large-4" id="menu">
+        Hello, welcome to our demonstration of Foundation features. Here is the
+        menu feature to help you navigate around our page.<br>
+        <ul class="menu">
+          <li><a href="#">Grids</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+        </ul>
+      </div>
+      <div class="div1 cell small-12 medium-6 large-4">
+        Try resizing the window and see what happens to these cells. Where does this
+        cell go?
+      </div>
+      <div class="div1 cell small-12 medium-12 large-4" id="buttons">
+        <h3>Buttons</h3>
+        <a href="https://www.youtube.com/" class="button">Go to Youtube</a>
+        <a href="https://www.youtube.com/" class="button secondary">I am secondary button</a>
+        <button type="button" class="success button">This is a success button.</button>
+        <button type="button" class="alert button">This is an alert button.</button><br>
+      </div>
+    </div><br>
+    <div class="grid-y grid-margin-y grid-padding-y">
+      <div class="cell div1 small-10 medium-6 large-2">
+        Hey, I am a vertical cell on a vertical grid!
+      </div>
+      <div class="cell div1 small-2 medium-6 large-10">
+        I am also a vertical cell. See the margin on top of me?
+        <div class="callout" data-closable>
+          Look at me, I am a callout!<br>
+        </div>
+      </div>
+    </div>
+    <!-- <a href="#" class="thumbnail"><img style="height: 300px; width: 300px" src="meme.jpg" alt="meme"></a> -->
+
+    <div class="media-object stack-for-small">
+  <div class="media-object-section">
+    <div class="thumbnail">
+      <img src= "meme.jpg" style="height: 300px; width: 300px" >
+    </div>
+  </div>
+  <div class="media-object-section">
+    <h4>This is very true</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro at, tenetur cum beatae excepturi id ipsa? Esse dolor laboriosam itaque ea nesciunt, earum, ipsum commodi beatae velit id enim repellat.</p>
+
+    <div class="media-object">
+      <div class="media-object-section">
+        <div class="thumbnail">
+          <img src= "attach.jpg"  style="height: 300px; width: 300px">
+        </div>
+      </div>
+      <div class="media-object-section">
+        <h4>I am also true</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro at, tenetur cum beatae excepturi id ipsa? Esse dolor laboriosam itaque ea nesciunt, earum, ipsum commodi beatae velit id enim repellat.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
