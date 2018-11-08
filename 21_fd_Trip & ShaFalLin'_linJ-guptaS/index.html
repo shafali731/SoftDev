@@ -24,11 +24,16 @@ K21 -- Who Does Frame Work For?
           <li><a href="#">Grids</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#blockgrid">Block Grid</a></li>
+          <li><a href="#media">Media</a></li>
         </ul>
       </div>
       <div class="div1 cell small-12 medium-6 large-4">
         Try resizing the window and see what happens to these cells. Where does this
-        cell go?
+        cell go?<br>
+        <div class="callout" data-closable>
+          Look at me, I am a callout!<br>
+        </div>
       </div>
       <div class="div1 cell small-12 medium-12 large-4" id="buttons">
         <h3>Buttons</h3>
@@ -38,50 +43,53 @@ K21 -- Who Does Frame Work For?
         <button type="button" class="alert button">This is an alert button.</button><br>
       </div>
     </div><br>
-    <div class="grid-y grid-margin-y grid-padding-y">
-      <div class="cell div1 small-10 medium-6 large-2">
+    <div class="grid-y grid-margin-y grid-padding-y vertical" >
+      <div class="cell div2 small-7 medium-6 large-4">
         Hey, I am a vertical cell on a vertical grid!
       </div>
-      <div class="cell div1 small-2 medium-6 large-10">
+      <div class="cell div2 small-5 medium-6 large-8">
         I am also a vertical cell. See the margin on top of me?
-        <div class="callout" data-closable>
-          Look at me, I am a callout!<br>
+      </div>
+    </div><br>
+    Resize and see how each cell divide into 2, 4, or 6 columns.
+    <div class="grid-x grid-padding-x small-up-2 medium-up-4 large-up-6" id="blockgrid">
+      <div class="div3 cell">One</div>
+      <div class="div3 cell">Two</div>
+      <div class="div3 cell">Three</div>
+      <div class="div3 cell">Four</div>
+      <div class="div3 cell">Five</div>
+      <div class="div3 cell">Six</div>
+      <div class="div3 cell">Seven</div>
+      <div class="div3 cell">Eight</div>
+    </div>
+    <div class="media-object stack-for-small" id="media">
+      <div class="media-object-section">
+        <div class="thumbnail">
+          <img src= "meme.jpg" style="height: 300px; width: 300px" >
         </div>
       </div>
-    </div>
-    <!-- <a href="#" class="thumbnail"><img style="height: 300px; width: 300px" src="meme.jpg" alt="meme"></a> -->
-
-    <div class="media-object stack-for-small">
-  <div class="media-object-section">
-    <div class="thumbnail">
-      <img src= "meme.jpg" style="height: 300px; width: 300px" >
-    </div>
-  </div>
-  <div class="media-object-section">
-    <h4>This is very true</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro at, tenetur cum beatae excepturi id ipsa? Esse dolor laboriosam itaque ea nesciunt, earum, ipsum commodi beatae velit id enim repellat.</p>
-
-    <div class="media-object">
+      <div class="media-object-section">
+        <h4>This is very true</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro at, tenetur cum beatae excepturi id ipsa? Esse dolor laboriosam itaque ea nesciunt, earum, ipsum commodi beatae velit id enim repellat.</p>
+      </div><br><br>
       <div class="media-object-section">
         <div class="thumbnail">
           <img src= "attach.jpg"  style="height: 300px; width: 300px">
         </div>
-      </div>
+      </div><br>
       <div class="media-object-section">
         <h4>I am also true</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro at, tenetur cum beatae excepturi id ipsa? Esse dolor laboriosam itaque ea nesciunt, earum, ipsum commodi beatae velit id enim repellat.</p>
       </div>
     </div>
-  </div>
-</div>
-<p>Did you like this page?</p>
-<div class="switch large">
-  <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
-  <label class="switch-paddle" for="yes-no">
-    <span class="show-for-sr">Did you like this page?</span>
-    <span class="switch-active" aria-hidden="true">Yes</span>
-    <span class="switch-inactive" aria-hidden="true">No</span>
-  </label>
-</div>
+    <p>Did you like this page?</p>
+    <div class="switch large">
+      <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
+      <label class="switch-paddle" for="yes-no">
+        <span class="show-for-sr">Did you like this page?</span>
+        <span class="switch-active" aria-hidden="true">Yes</span>
+        <span class="switch-inactive" aria-hidden="true">No</span>
+      </label>
+    </div>
   </body>
 </html>
