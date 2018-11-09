@@ -1,29 +1,106 @@
+body{
+  background: #49DCB1;
+}
+
+h1{
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+h2{
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+h3{
+  text-align: center;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+h4{
+  text-align: center;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+p{
+  text-align: center;
+}
+
 .div1{
-  border: solid #EEEEEE 1px;
-  margin: 10px;
+  border: solid #49DCB1 3px;
+  margin: 2px 0px;
+  background: #456990;
+  color: white;
+  text-align: center;
 }
 
 .div2{
-  border: solid #000000 2px;
-  padding: 10px
+  border: solid #49DCB1 3px;
+  background: #456990;
+  color: white;
+  text-align: center;
 }
 
 .div3{
-  border: solid #000000 1px;
-}
-
-body{
-  margin: 30px;
-}
-
-h1,h3{
+  border: solid #49DCB1 3px;
+  background: #456990;
+  color: white;
   text-align: center;
 }
+
+.div4{
+  border: solid #49DCB1 3px;
+  background: #456990;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.everything{
+  margin: 0px 30px;
+}
+
+
+.menu-item{
+  color: white;
+}
+
+.menu-item:hover{
+  color: #EEB868;
+}
+
+.top-bar{
+  background-color: #EF767A;
+}
+
+.grid-y{
+  height:500px;
+}
+
+.switch{
+  text-align: center;
+}
+
+.top-title{
+  font-size: 19px;
+  font-weight: bold;
+  display: inline;
+  padding: 0px 5px
+}
+
+.top-nav{
+  padding: 0px 10px;
+}
+
+#search-menu{
+  background: #EF767A
+}
+
 
 #buttons{
   text-align: center;
-}
-
-.vertical{
-  height: 300px;
 }

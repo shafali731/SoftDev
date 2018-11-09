@@ -1,8 +1,8 @@
 <!--
 Trip & ShaFalLin' -- Jason Lin and Shafali Gupta
 SoftDev1 pd7
-K21 -- Who Does Frame Work For?
-2018-11-7
+K22 -- Make Your Dog Food Taste Better
+2018-11-8
 -->
 
 <!DOCTYPE html>
@@ -15,84 +15,189 @@ K21 -- Who Does Frame Work For?
     <link rel="stylesheet" type="text/css" href="stylings.css">
   </head>
   <body>
-    <h1>Demonstration of Using Foundation</h1>
-    <div class="grid-x grid-padding-x grid-margin-x ">
-      <div class="div1 cell small-12 medium-6 large-4" id="menu">
-        Hello, welcome to our demonstration of Foundation features. Here is the
-        menu feature to help you navigate around our page.<br>
-        <ul class="menu">
-          <li><a href="#">Grids</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#buttons">Buttons</a></li>
-          <li><a href="#blockgrid">Block Grid</a></li>
-          <li><a href="#media">Media</a></li>
+
+    <!--
+      This is the top-bar and it resides on the top of the container that holds it.
+      You can have a top-bar-left and top-bar-right to separate different functions.
+      Try clicking on them to navigate to different parts of the page.
+      -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+          <p class="top-title">Table of Contents</p>
+          <a class="top-nav" href="#grids">Grids</a>
+          <a class="top-nav" href="#buttons">Buttons</a>
+          <a class="top-nav" href="#menus">Menu</a>
+          <a class="top-nav" href="#media">Media</a>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu" id="search-menu">
+          <input type="search" class="search" placeholder="Enter something...">
+          <button type="button" class="button search">Search</button>
         </ul>
       </div>
-      <div class="div1 cell small-12 medium-6 large-4">
-        Try resizing the window and see what happens to these cells. Where does this
-        cell go?<br>
-        <div class="callout" data-closable>
-          Look at me, I am a callout!<br>
+    </div>
+
+    <div class="everything">
+      <h1>Quick Guide to Foundation</h1>
+        Welcome to a quick guide to Foundation. We hope you find what you want here
+        for your coding needs. To start, please open the source code of this index.html
+        file with a text editor. It is reccommended that it displays line numbers.<br>
+      <h2 id="grids">Grids</h2>
+      Grids are a responsive way to organize the content of your website. Go ahead
+      and try to resize the window to see the magic for both vertical and horizontal
+      grids.
+
+      <!--
+        This is the grid-x which resizes the cells horizontally.
+        A good thing to note is that if you use the class "cell"
+        it will fill in all of the options that you didn't specify
+        with the number 12.
+      -->
+      <h2>Grid-X</h2>
+      <p>Lines 50-68</p>
+      <div class="grid-x grid-padding-x grid-margin-x">
+        <div class="div1 cell medium-6 large-4">
+          medium-6 large-4
+        </div>
+        <div class="div1 cell medium-6 large-4">
+          medium-6 large-4
+        </div>
+        <div class="div1 cell large-4">
+          large-4
         </div>
       </div>
-      <div class="div1 cell small-12 medium-12 large-4" id="buttons">
-        <h3>Buttons</h3>
-        <a href="https://www.youtube.com/" class="button">Go to Youtube</a>
-        <a href="https://www.youtube.com/" class="button secondary">I am secondary button</a>
+
+      <!--
+        This is grid-y which is vertical. In order for the resize
+        to work correctly, make sure to set a height in the styling
+        of the div with class "grid-y"
+        -->
+      <h2>Grid-Y</h2>
+      <p>Lines 70-87</p>
+      <div class="grid-y grid-margin-y" id="vertical-grid">
+        <div class="div2 cell small-4 medium-6 large-8">
+          small-4 medium-6 large-8
+        </div>
+        <div class="div2 cell small-4 medium-2 large-2">
+          small-4 medium-2 large-2
+        </div>
+        <div class="div2 cell small-4 medium-4 large-2">
+          small-4 medium-4 large-2
+        </div>
+      </div>
+
+      <!--
+        This is the block grids. It allows you to split up cells into columns
+        depending on the size of the window. This is useful for displaying
+        an array of information of unknown size.
+        -->
+      <h2>Block Grids</h2>
+      <p>Lines 89-109<br>Resize and see how each cell divide into 2, 4, or 6 columns.</p>
+      <div class="grid-x grid-padding-x small-up-2 medium-up-4 large-up-6" id="blockgrid">
+        <div class="div3 cell">One</div>
+        <div class="div3 cell">Two</div>
+        <div class="div3 cell">Three</div>
+        <div class="div3 cell">Four</div>
+        <div class="div3 cell">Five</div>
+        <div class="div3 cell">Six</div>
+        <div class="div3 cell">Seven</div>
+        <div class="div3 cell">Eight</div>
+        <div class="div3 cell">Nine</div>
+        <div class="div3 cell">Ten</div>
+        <div class="div3 cell">Eleven</div>
+        <div class="div3 cell">Tweleve</div>
+      </div>
+
+      <!--
+        These are the buttons of Foundation. They are already styled so you don't
+        need to style them. They come in different sizes and can expand.
+        Notice how some buttons are <a> tags and others are <button> tags.
+        The <a> tags can be used to link to other pages. However, the button requires
+        JavaScript to function so it isn't much use now.
+        -->
+      <h2 id="buttons">Buttons</h2>
+      <p>Lines 111-131<br> Look at these different types of buttons and click on them!</p>
+      <div class="div4 cell">
+        <a href="https://www.youtube.com/" class="button">Go to YouTube</a>
+        <a href="https://www.youtube.com/" class="button secondary">I am secondary YouTube button</a><br>
         <button type="button" class="success button">This is a success button.</button>
-        <button type="button" class="alert button">This is an alert button.</button><br>
+        <button type="button" class="alert button">This is an alert button.</button>
+        <a href="#button" class="button warning">This is a warning button.</a><br>
+        <a href="#buttons" class="button tiny">Tiny Button</a>
+        <a href="#buttons" class="button small">Small Button</a>
+        <a href="#buttons" class="button">Normal Button</a>
+        <a href="#buttons" class="button large">Large Button</a>
+        <a href="#buttons" class="button expanded">Expanded Button</a>
       </div>
-    </div><br>
-    <div class="grid-y grid-margin-y grid-padding-y vertical" >
-      <div class="cell div2 small-7 medium-6 large-4">
-        Hey, I am a vertical cell on a vertical grid!
+
+      <!--
+        Menus are used to navigate. You can have either horizontal or vertical
+        menus. You can also align them to the center, right or left. Make sure
+        that you use unordered lists for your menus.
+        -->
+      <h2 id="menus">Menus</h2>
+      <p>Lines 133-154 <br>Menus are used for navigation. Try clicking on this menu to go to different
+      parts of the page. Notice that the navigation bar on top is also a menu.</p>
+      <div class="div1 cell">
+        <h3>Horizontal Menu</h3>
+        <ul class="menu align-center">
+          <li><a class="menu-item" href="#">Top</a></li>
+          <li><a class="menu-item" href="#grids">Go Back to Grids</a></li>
+          <li><a class="menu-item" href="#buttons">Go Back to Buttons</a></li>
+        </ul>
+        <h3>Vertical Menu</h3>
+        <ul class="vertical menu">
+          <li><a class="menu-item" href="#">Top</a></li>
+          <li><a class="menu-item" href="#grids">Go Back to Grids</a></li>
+          <li><a class="menu-item" href="#buttons">Go Back to Buttons</a></li>
+        </ul>
       </div>
-      <div class="cell div2 small-5 medium-6 large-8">
-        I am also a vertical cell. See the margin on top of me?
-      </div>
-    </div><br>
-    Resize and see how each cell divide into 2, 4, or 6 columns.
-    <div class="grid-x grid-padding-x small-up-2 medium-up-4 large-up-6" id="blockgrid">
-      <div class="div3 cell">One</div>
-      <div class="div3 cell">Two</div>
-      <div class="div3 cell">Three</div>
-      <div class="div3 cell">Four</div>
-      <div class="div3 cell">Five</div>
-      <div class="div3 cell">Six</div>
-      <div class="div3 cell">Seven</div>
-      <div class="div3 cell">Eight</div>
-    </div>
-    <div class="media-object stack-for-small" id="media">
-      <div class="media-object-section">
-        <div class="thumbnail">
-          <img src= "meme.jpg" style="height: 300px; width: 300px" >
+
+      <!--
+        Media can be displayed like normal using the <img> tag. However, if you want
+        thumbnails to accompany them, you can also you media objects. To use it,
+        you need a "media-object" div and the sections of the media object are
+        the "media-object-section" divs which define different parts of the media
+        object.
+        -->
+      <h2 id="media">Media</h2>
+      <p>Lines 156-188<br>Media Objects are useful for displaying thumbnails next to an image.</p>
+      <div class="div4 cell">
+        <div class="media-object">
+          <div class="media-object-section">
+            <div class="thumbnail">
+              <img src= "meme.jpg" style="height: 200px; width: 200px" >
+            </div>
+          </div>
+          <div class="media-object-section">
+            <h4>This Meme Is Very True</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro at, tenetur cum beatae excepturi id ipsa? Esse dolor laboriosam itaque ea nesciunt, earum, ipsum commodi beatae velit id enim repellat.</p>
+          </div>
+        </div>
+        <div class="media-object">
+          <div class="media-object-section">
+            <div class="thumbnail">
+              <img src= "attach.jpg"  style="height: 200px; width: 200px">
+            </div>
+          </div>
+          <div class="media-object-section">
+            <h4>What A Funny Meme</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro at, tenetur cum beatae excepturi id ipsa? Esse dolor laboriosam itaque ea nesciunt, earum, ipsum commodi beatae velit id enim repellat.</p>
+          </div>
         </div>
       </div>
-      <div class="media-object-section">
-        <h4>This is very true</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro at, tenetur cum beatae excepturi id ipsa? Esse dolor laboriosam itaque ea nesciunt, earum, ipsum commodi beatae velit id enim repellat.</p>
-      <div class="media-object stack-for-small">
-      <div class="media-object-section">
-        <div class="thumbnail">
-          <img src= "attach.jpg"  style="height: 300px; width: 300px">
-        </div>
+
+      <br>
+      <p><b>Did you like this page?<b></p>
+      <div class="switch large">
+        <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
+        <label class="switch-paddle" for="yes-no">
+          <span class="show-for-sr">Did you like this page?</span>
+          <span class="switch-active" aria-hidden="true">Yes</span>
+          <span class="switch-inactive" aria-hidden="true">No</span>
+        </label>
       </div>
-      <div class="media-object-section">
-        <h4>I am also true</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro at, tenetur cum beatae excepturi id ipsa? Esse dolor laboriosam itaque ea nesciunt, earum, ipsum commodi beatae velit id enim repellat.</p>
-      </div>
-    </div>
-    </div>
-    </div>
-    <br>
-    <p>Did you like this page?</p>
-    <div class="switch large">
-      <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
-      <label class="switch-paddle" for="yes-no">
-        <span class="show-for-sr">Did you like this page?</span>
-        <span class="switch-active" aria-hidden="true">Yes</span>
-        <span class="switch-inactive" aria-hidden="true">No</span>
-      </label>
+      <p style="color:white;font-weight:bold;">&copy;Team Trip & ShaFalLin' - Jason Lin and Shafali Gupta</p>
     </div>
   </body>
 </html>
