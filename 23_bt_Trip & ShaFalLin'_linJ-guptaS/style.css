@@ -1,0 +1,47 @@
+body{
+  margin:30px;
+  background: #C0E0DE;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+h4{
+  text-align: center;
+}
+
+pre{
+  background: lightgray;
+  font-size: 12px;
+}
+
+.grid-demo{
+  background: #C0E0DE;
+  text-align: center;
+}
+
+.col-demo{
+  background: #9EEFE5;
+  border: 1px solid #4F7CAC;
+  text-align: center;
+}
+
+#top{
+  margin-top: 30px;
+}
+
+#buttons{
+  margin-top: 20px;
+}
+#links{
+    color: #C0E0DE;
+}

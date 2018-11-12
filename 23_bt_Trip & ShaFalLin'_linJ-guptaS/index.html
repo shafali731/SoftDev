@@ -1,0 +1,234 @@
+<!--
+Team Trip & ShaFalLin' -- Jason Lin and Shafali Gupta
+SoftDev1 pd7
+K23 -- How the Other Half Lives
+2018-11-09
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Guide</title>
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+           crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+    <a href="#home" id="links">Home</a>
+    <a href="#top" id="links">Containers</a>
+    <a href="#buttons" id="links">Buttons</a>
+    <a href="#media" id="links">Media</a>
+    <a href="#alert" id="links">Alerts</a>
+    <a href="#tables" id="links">Tables</a>
+</nav>
+    <div class="container" id= "home">
+      <div id="top">
+        <br>
+        <h1>A Quick Bootstrap Guide</h1>
+        <h4>By Trip & ShaFalLin'</h4>
+      </div>
+      <hr>
+
+      <div id="containers">
+        <h2>Containers, Rows, and Columns</h2>
+        <p>
+          This entire page is contained within a container. Allowing for adjustment
+          of the text on the page as you change the window size. In addition, you can
+          create rows that can be split up into columns of 12 anyway you like depending
+          on the size of your window. Check this out:
+        </p>
+
+        <pre>
+          <xmp>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                  Small: 12 columns; Medium: 6 columns; Large: 4 columns; Extra Large: 3 columns;
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                  Small: 12 columns; Medium: 6 columns; Large: 4 columns; Extra Large: 3 columns;
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                  Small: 12 columns; Medium: 6 columns; Large: 4 columns; Extra Large: 3 columns;
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-12 col-xl-3">
+                  Small: 12 columns; Medium: 6 columns; Large: 12 columns; Extra Large: 3 columns;
+                </div>
+              </div>
+            </div>
+          </xmp>
+        </pre>
+
+        A row here:
+        <div class="row grid-demo">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-demo">
+            col-sm-12 | col-md-6 | col-lg-4 | col-xl-3
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-demo">
+            col-sm-12 | col-md-6 | col-lg-4 | col-xl-3
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-demo">
+            col-sm-12 | col-md-6 | col-lg-4 | col-xl-3
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-12 col-xl-3 col-demo">
+            col-sm-12 | col-md-6 | col-lg-12 | col-xl-3
+          </div>
+        </div>
+
+        Here is another row:
+        <div class="row grid-demo">
+          <div class="col-sm-8 col-md-6 col-lg-4 col-demo">
+            col-sm-8 | col-md-6 | col-lg-4
+          </div>
+          <div class="col-sm-4 col-md-6 col-lg-8 col-demo">
+            col-sm-4 | col-md-6 | col-lg-8
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div id="buttons">
+        <h2>Buttons</h2>
+        <p>
+          Bootstrap offer many predesigned buttons that you can choose from. To
+          make a button, you do the following:
+        </p>
+
+        <pre>
+          <xmp>
+            <button type="button" class="btn btn-<type>">Text</button>
+            <a class="btn btn-<type>" href="#buttons" role="button">Text</a>
+          </xmp>
+        </pre>
+
+        <p>
+          You just need to make sure to replace the type with whatever button type
+          you want. The choices are primary, secondary, success, danger, warning,
+          info, light, and dark. An important note is that these buttons do not
+          really do anything unless you pair it with JavaScript. Here is how they all look like:
+        </p>
+
+        <button type="button" class="btn btn-primary">primary</button>
+        <button type="button" class="btn btn-secondary">secondary</button>
+        <button type="button" class="btn btn-success">success</button>
+        <button type="button" class="btn btn-danger">danger</button>
+        <button type="button" class="btn btn-warning">warning</button>
+        <button type="button" class="btn btn-info">info</button>
+        <button type="button" class="btn btn-light">light</button>
+        <button type="button" class="btn btn-dark">dark</button>
+        <a class="btn btn-primary" href="#buttons" role="button">This is an &lt;a&gt; tag</a>
+      </div>
+      <hr>
+      <br id="media"><br><br>
+                  <h2>Media</h2>
+                  Bootstrap takes care of text formatting with images.
+                  <div class="media">
+                      <img class="mr-3" src="meme.jpg" alt="meme">
+                      <div class="media-body">
+                    <h5 class="mt-0">Media heading</h5>
+                    Text is formatted next to the image automatically.
+                </div>
+                  </div>
+                  Basic code for media formatting
+                  <pre>
+                      <xmp style="background-color: lightgray">
+                  <div class="media">
+                    <img class="mr-3" src="meme.jpg" alt="meme">
+                    <div class="media-body">
+                    <h5 class="mt-0">Media heading</h5>
+                    Text is formatted next to the image automatically.
+                </div>
+                  </div>
+                  </xmp>
+                  </pre>
+      <div id="alert">
+        <h2>Alert</h2>
+        Bootstrap has alert classes that can be used to inform the users. Just like
+        buttons, they can be primary, secondary, success, danger, warning,
+        info, light, or dark.
+        <pre>
+          <xmp>
+            <div class="alert alert-<type>">Text</div>
+          </xmp>
+        </pre>
+        <div class="alert alert-primary">primary</div>
+        <div class="alert alert-secondary">secondary</div>
+        <div class="alert alert-success">success</div>
+        <div class="alert alert-danger">danger</div>
+        <div class="alert alert-warning">warning</div>
+        <div class="alert alert-info">info</div>
+        <div class="alert alert-light">light</div>
+        <div class="alert alert-dark">dark</div>
+      </div>
+      <hr>
+
+      <div id="tables">
+        <h2>Tables</h2>
+        Bootstrap provides styling for tables. Just use the .table class followed
+        by the theme. The different components of the table include the &lt;thead&gt;
+        and the &lt;tbody&gt;. Within each table row (&lt;tr&gt;) there can be a table
+        header tag just for that specific row, using the scope attribute.
+        <pre>
+          <xmp>
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">ID</th>
+                  <th scope="col">Favorite Ice Cream Flavour</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Jason</th>
+                  <td>345</td>
+                  <td>Vanilla</td>
+                </tr>
+                <tr>
+                  <th scope="row">Shafali</th>
+                  <td>2233</td>
+                  <td>Strawberry</td>
+                </tr>
+                <tr>
+                  <th scope="row">John</th>
+                  <td>908</td>
+                  <td>Chocolate</td>
+                </tr>
+              </tbody>
+            </table>
+          </xmp>
+        </pre>
+        <table class="table table-light">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">ID</th>
+              <th scope="col">Favorite Ice Cream Flavour</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Jason</th>
+              <td>345</td>
+              <td>Vanilla</td>
+            </tr>
+            <tr>
+              <th scope="row">Shafali</th>
+              <td>2233</td>
+              <td>Cherry</td>
+            </tr>
+            <tr>
+              <th scope="row">John</th>
+              <td>908</td>
+              <td>Chocolate</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </body>
+</html>
